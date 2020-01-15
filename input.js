@@ -19,6 +19,12 @@ const setupInput = function(conn) {
     if (data === "d") {
       connection.write('Move: right');
     }
+    if (data === "g") {
+      connection.write('Say: GG');
+    }
+    if (data === "f") {
+      connection.write('Say: f in chat');
+    }
     if (data === "\u0003") {
       process.stdout.write("Thanks for playing, see you next time!\n");
       process.exit();
